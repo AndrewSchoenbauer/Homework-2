@@ -1,0 +1,61 @@
+:root {
+    --light: rgb(192, 200, 204);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    background-color: teal;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color:var(--light);
+}
+nav ul {
+    position: sticky;
+    top: 0;
+    display: inline-block;
+    justify-content: space-between;
+    min-width: 400px;
+    background-color:var(--light);
+}
+nav li {
+    display: inline;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #abc3f7;
+    background-color:var(--light);
+}
+header h1 {
+    font-size: 200%;
+}
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex: 1; */
+    /* flex-direction: row; */
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 15%;
+    margin-right: 40%;
+    background-color: var(--light);
+    padding: 10%;
+    
+}
+.first {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-right: 3%;
+    color: black;
+}
+main h2 {
+    font-size: 200%;
+    margin-left: 0%;
+}
+article p {
+    font-size: 125%;
+}
