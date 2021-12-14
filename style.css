@@ -1,11 +1,18 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
 :root {
-    --light: rgb(192, 200, 204);
+    --light: rgb(85, 84, 84);
+    --teal: rgb(0, 128, 128);
 }
 body {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     line-height: 1.5;
-    background-color: teal;
+    background-color: rgb(85, 84, 84)
 }
 header {
     display: flex;
@@ -32,30 +39,89 @@ nav li {
 header h1 {
     font-size: 200%;
 }
-.flexbox {
+    
+
+.main-body {
     display: flex;
     flex-wrap: wrap;
-    /* flex: 1; */
-    /* flex-direction: row; */
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;   
+}
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+.first {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--teal);
+    border: 5px black solid;
+}
+main h2 {
+    font-size: 36px;
+    margin-left: 0%;
+    
+}
+main section p {
+    font-size: 125%;
+}
+/* .text-block {
+  bottom: 20px;
+  right: 20px;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px; */
+/* } */
+/* .footer-box {
+    display: flex;
     border: 2px solid black;
     border-radius: 5px;
     margin-left: 15%;
-    margin-right: 40%;
     background-color: var(--light);
-    padding: 10%;
-    
-}
-.first {
-    display: flex;
+    padding: 1%;
+    position: relative; */
+/* } */
+.last {
+     display: flex;
     margin-top: 5%;
     margin-left: 1%;
     margin-right: 3%;
     color: black;
 }
-main h2 {
-    font-size: 200%;
-    margin-left: 0%;
+.future-work {
+    margin-right: 40px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--teal);
+    margin-bottom:32px;
+    border: 5px solid black;
+
 }
-article p {
-    font-size: 125%;
+.side-work {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    background-color: var(--teal);
+    border: 5px black solid;
+    
+}
+@media screen and (max-width: 768px) {
+    main,
+    header {
+        flex-direction: column;
+    }
+    aside {
+        order: 2;
+    }
 }
